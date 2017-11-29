@@ -142,7 +142,7 @@ function getSelectedItems(node){
 
 Ext.onReady(function () {
 
-	Ext.BLANK_IMAGE_URL = '/static/bejson/jsonview/ico1/s.gif';	
+	Ext.BLANK_IMAGE_URL = 'css/img/s.gif';
 	Ext.QuickTips.init();
 
 	var ctrlF = new Ext.KeyMap(document, [{
@@ -270,13 +270,13 @@ Ext.onReady(function () {
 	        	id: 'searchResultLabel',
 	        	style: 'padding-left:10px;font-weight:bold'
 	        }), {
-	        	iconCls: Ext.ux.iconCls.get('/static/bejson/jsonview/ico1/arrow_down.png'),
+	        	iconCls: Ext.ux.iconCls.get('css/img/arrow_down.png'),
 	        	text: 'Next',
 	        	handler: function () {
 	        		jsonviewer.searchNext();
 	        	}
 	        }, {
-	        	iconCls: Ext.ux.iconCls.get('/static/bejson/jsonview/ico1/arrow_up.png'),
+	        	iconCls: Ext.ux.iconCls.get('css/img/arrow_up.png'),
 	        	text: 'Previous',
 	        	handler: function () {
 	        		jsonviewer.searchPrevious();
@@ -397,7 +397,7 @@ Ext.onReady(function () {
 			treebuild: function () {
 				root.removeAllChildren();
 				root.appendChild(this.json2leaf(json));
-				root.setIcon(Ext.isArray(json) ? '/static/bejson/jsonview/ico1/array.gif' : '/static/bejson/jsonview/ico1/object.gif');
+				root.setIcon(Ext.isArray(json) ? 'css/img/array.gif' : 'css/img/object.gif');
 				this.gridbuild(root);
 			},
 			gridbuild: function (node) {
@@ -425,17 +425,17 @@ Ext.onReady(function () {
 				for (var i in json) {
 					if (json.hasOwnProperty(i)) {
 						if (json[i] === null) {
-							ret.push({text: i + ' : null', leaf: true, icon: '/static/bejson/jsonview/ico1/red.gif'});
+							ret.push({text: i + ' : null', leaf: true, icon: 'css/img/red.gif'});
 						} else if (typeof json[i] === 'string') {
-							ret.push({text: i + ' : "' + json[i] + '"', leaf: true, icon: '/static/bejson/jsonview/ico1/blue.gif'});
+							ret.push({text: i + ' : "' + json[i] + '"', leaf: true, icon: 'css/img/blue.gif'});
 						} else if (typeof json[i] === 'number') {
-							ret.push({text: i + ' : ' + json[i], leaf: true, icon: '/static/bejson/jsonview/ico1/green.gif'});
+							ret.push({text: i + ' : ' + json[i], leaf: true, icon: 'css/img/green.gif'});
 						} else if (typeof json[i] === 'boolean') {
-							ret.push({text: i + ' : ' + (json[i] ? 'true' : 'false'), leaf: true, icon: '/static/bejson/jsonview/ico1/yellow.gif'});
+							ret.push({text: i + ' : ' + (json[i] ? 'true' : 'false'), leaf: true, icon: 'css/img/yellow.gif'});
 						} else if (typeof json[i] === 'object') {
-							ret.push({text: i, children: this.json2leaf(json[i]), icon: Ext.isArray(json[i]) ? '/static/bejson/jsonview/ico1/array.gif' : '/static/bejson/jsonview/ico1/object.gif'});
+							ret.push({text: i, children: this.json2leaf(json[i]), icon: Ext.isArray(json[i]) ? 'css/img/array.gif' : 'css/img/object.gif'});
 						} else if (typeof json[i] === 'function') {
-							ret.push({text: i + ' : function', leaf: true, icon: '/static/bejson/jsonview/ico1/red.gif'});
+							ret.push({text: i + ' : function', leaf: true, icon: 'css/img/red.gif'});
 						}
 					}
 				}
