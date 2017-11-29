@@ -313,6 +313,10 @@ Ext.onReady(function () {
 				jsonviewer.format();
 			}},
 			'-',
+			{text: '格式化ext', handler: function () {
+				jsonviewer.formatExt();
+			}},
+			'-',
 			{text: '删除空格', handler: function () {
 				jsonviewer.removeWhiteSpace();
 			}},
@@ -323,12 +327,13 @@ Ext.onReady(function () {
 			'-',
 			{text: '去除转义', handler: function () {
 				jsonviewer.removeZhuanyi();
-			}},
-			'->',
-			{text: '回到首页', handler: function(){
-        window.location.href="http://www.bejson.com/";
-			}},
-			{text: '关于', handler: aboutWindow}
+			}}
+			// ,
+			// '->',
+			// {text: '回到首页', handler: function(){
+        // window.location.href="http://www.bejson.com/";
+			// }},
+			// {text: '关于', handler: aboutWindow}
 		],
 		items: edit
 	};
@@ -540,6 +545,45 @@ Ext.onReady(function () {
 					} else if (!inString && (c === ']' || c === '}')) {
 						tab--;
 						c = "\n" + String.space(tab * 2) + c;
+					}
+					t.push(c);
+				}
+				edit.setValue(t.join(''));
+			},
+			formatExt: function () {
+				var text = edit.getValue().split("\n").join(" ");
+				var t = [];
+				var tab = 0;
+				var inString = false;
+				for (var i = 0, len = text.length; i < len; i++) {
+					var c = text.charAt(i);
+					if (inString && c === inString) {
+						// TODO: \\"
+						if (text.charAt(i - 1) !== '\\') {
+							inString = false;
+						}
+					} else if (!inString && (c === '"' || c === "'")) {
+						inString = c;
+					} else if (!inString && (c === ' ' || c === "\t")) {
+						c = '';
+					} else if (!inString && c === ':') {
+						c += ' ';
+					} else if (!inString && c === ',') {
+						c += "\n" + String.space(tab * 2);
+					} else if (!inString && (c === '[' || c === '{')) {
+						tab++;
+						c += "\n" + String.space(tab * 2);
+					} else if (!inString && (c === ']' || c === '}')) {
+						tab--;
+						c = "\n" + String.space(tab * 2) + c;
+					} else if (!inString && (c === '\\' )) {
+					    if(i + 1 < len){
+                            var nextX = text.charAt(i+1);
+                            if(nextX === 'n'){
+                                c = "\n" + String.space((tab+1) * 2) ;
+                                i++;
+                            }
+                        }
 					}
 					t.push(c);
 				}
