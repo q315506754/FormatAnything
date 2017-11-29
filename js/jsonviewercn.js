@@ -328,11 +328,11 @@ Ext.onReady(function () {
 			{text: '去除转义', handler: function () {
 				jsonviewer.removeZhuanyi();
 			}}
-			// ,
-			// '->',
-			// {text: '回到首页', handler: function(){
-        // window.location.href="http://www.bejson.com/";
-			// }},
+			,
+			'->',
+			{text: 'github', handler: function(){
+                window.location.href="https://github.com/q315506754/FormatAnything";
+			}},
 			// {text: '关于', handler: aboutWindow}
 		],
 		items: edit

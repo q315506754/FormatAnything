@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99a60ba5-9fab-4c4b-b817-e2816447a8a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ext-all.css" afterPath="$PROJECT_DIR$/css/ext-all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jsonviewercn.js" afterPath="$PROJECT_DIR$/js/jsonviewercn.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsonviewercn.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jsonviewercn.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jsonviewercn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="229" column="40" lean-forward="true" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
+            <state relative-caret-position="600">
+              <caret line="333" column="82" lean-forward="false" selection-start-line="333" selection-start-column="82" selection-end-line="333" selection-end-column="82" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -49,18 +48,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ext-all.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ext-all.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ext-all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="115" column="44" lean-forward="true" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
+            <state relative-caret-position="718">
+              <caret line="131" column="36" lean-forward="true" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -82,8 +81,8 @@
     </findStrings>
     <replaceStrings>
       <replace>img/</replace>
-      <replace>img</replace>
       <replace>css/img/</replace>
+      <replace>img</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\FormatAnything</dir>
@@ -97,6 +96,7 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/ext-all.css" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/jsonviewercn.js" />
       </list>
     </option>
@@ -134,16 +134,6 @@
             <path>
               <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
               <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,17 +266,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511954393370</updated>
-      <workItem from="1511954395002" duration="4919000" />
+      <workItem from="1511954395002" duration="5855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4919000" />
+    <option name="totallyTimeSpent" value="5855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -330,29 +321,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/ext-all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="131" column="36" lean-forward="true" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jsonviewercn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="229" column="40" lean-forward="true" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
+        <state relative-caret-position="600">
+          <caret line="333" column="82" lean-forward="false" selection-start-line="333" selection-start-column="82" selection-end-line="333" selection-end-column="82" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/ext-all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="115" column="44" lean-forward="true" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
