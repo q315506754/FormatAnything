@@ -313,7 +313,7 @@ Ext.onReady(function () {
 				jsonviewer.format();
 			}},
 			'-',
-			{text: '格式化ext', handler: function () {
+			{text: '格式化(\\n)', handler: function () {
 				jsonviewer.formatExt();
 			}},
 			'-',
@@ -576,7 +576,8 @@ Ext.onReady(function () {
 					} else if (!inString && (c === ']' || c === '}')) {
 						tab--;
 						c = "\n" + String.space(tab * 2) + c;
-					} else if (!inString && (c === '\\' )) {
+					// } else if (!inString && (c === '\\' )) {
+					} else if ( (c === '\\' )) {
 					    if(i + 1 < len){
                             var nextX = text.charAt(i+1);
                             if(nextX === 'n'){
