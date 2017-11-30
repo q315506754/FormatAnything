@@ -13,3 +13,8 @@
 * unicode
 * html预览
 * js在线调试
+* 字符串比较
+* 多行加数字
+* http post
+* sql格式
+* ascii keycode

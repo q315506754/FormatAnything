@@ -30,8 +30,27 @@ function executeCmdForLastLine(cmd,promt) {
     var lastL = getDataLastLineValue();
     if(lastL) {
         if(promt){
-            appendDataValue("-------------after "+promt+"--------------");
+            appendDataValue("-------------"+promt+" for last line--------------");
         }
         appendDataValue(cmd(lastL));
+    }
+}
+
+// tab -> "    "
+window.onload=function(){
+    var oTxt = document.getElementById("edit");
+    oTxt.onkeydown = function (ev) {
+        var oEvent = ev || event;
+        //tab
+        if (oEvent.keyCode == 9) {
+            if (oEvent.preventDefault) {
+                oEvent.preventDefault();
+            }
+            else {
+                window.event.returnValue = false;
+            }
+            oTxt.value += "    "; //这里放入了4个空格
+        }
+
     }
 }

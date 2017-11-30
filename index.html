@@ -30,29 +30,13 @@
 </style>
 	<script type="text/javascript" src="js/ext-base.js"></script>
 	<script type="text/javascript" src="js/ext-all.js"></script>
-	<script type="text/javascript" src="js/jsonviewercn.js"></script>
+	<script type="text/javascript" src="js/jsonviewercn_extension.js"></script>
 	<script type="text/javascript" src="js/htmlformat.js"></script>
 	<script type="text/javascript" src="js/md5.js"></script>
 	<script type="text/javascript" src="js/sha.js"></script>
 	<script type="text/javascript" src="js/tool.js"></script>
-	<script>
-        window.onload=function(){
-            var oTxt = document.getElementById("edit");
-            oTxt.onkeydown = function (ev) {
-                var oEvent = ev || event;
-                if (oEvent.keyCode == 9) {
-                    if (oEvent.preventDefault) {
-                        oEvent.preventDefault();
-                    }
-                    else {
-                        window.event.returnValue = false;
-                    }
-                    oTxt.value += "    "; //这里放入了4个空格
-                }
-
-            }
-        } 
-    </script>
+	<script type="text/javascript" src="js/jsonviewerGenerator.js"></script>
+	<script type="text/javascript" src="js/initial.js"></script>
 
 <div id="ext-comp-1004" class="x-tab-panel" style="width: 1240px;margin-top:80px ">
 		<div class="x-tab-panel-header x-unselectable" id="ext-gen21" style="-webkit-user-select: none; width: 1238px; ">
