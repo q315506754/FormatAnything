@@ -40,18 +40,41 @@ function generateDataPanel() {
             {text: 'html格式化', handler: function () {
                 jsonviewer.formatHtml();
             }},
-            '-',
             {text: '压缩', handler: function () {
                 jsonviewer.removeWhiteSpace();
             }},
+            '-',
+            '-',
             {text: '大小写互转', handler: function () {
+                toggleCaseExecute(function () {
+                    getAndSetDataValue(function (txt) {
+                        return txt.toUpperCase();
+                    });
+                },function () {
+                    getAndSetDataValue(function (txt) {
+                        return txt.toLowerCase();
+                    });
+                });
+            }},
+            {text: 'Unicode互转', handler: function () {
                 var txt = getDataValue();
-                if(!toggleCaseMark)
-                    txt = txt.toLowerCase();
+                // if(txt.indexOf("u")>0)
+                if(/\\u\d{4}/.test(txt)>0)
+                    txt = u2h(txt);
                 else
-                    txt = txt.toUpperCase();
-                toggleCaseMark = !toggleCaseMark;
+                    txt = h2u(txt);
                 setDataValue(txt);
+            }},
+            {text: '中英符号互转', handler: function () {
+                toggleCaseExecute(function () {
+                    getAndSetDataValue(function (txt) {
+                        return cnChar2EnChar(txt);
+                    });
+                },function () {
+                    getAndSetDataValue(function (txt) {
+                        return enChar2CnChar(txt);
+                    });
+                });
             }},
             {text: 'Url En&Decode', handler: function () {
                 var txt = getDataValue();
@@ -70,6 +93,7 @@ function generateDataPanel() {
             // 	jsonviewer.removeZhuanyi();
             // }},
             '-',
+            '-',
             {text: 'MD5', handler: function () {
                 executeCmdForLastLine(function (lastL) {
                     return CryptoJS.MD5(lastL);
@@ -82,6 +106,16 @@ function generateDataPanel() {
                         + '\n' + "sha512:"+CryptoJS.SHA512(lastL)
                         ;
                 },"SHA");
+            }},
+            {text: 'BASE64+',  handler: function () {
+                executeCmdForLastLine(function (lastL) {
+                    return CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(lastL));
+                },"BASE64(UTF8)加密");
+            }},
+            {text: 'BASE64-',  handler: function () {
+                executeCmdForLastLine(function (lastL) {
+                    return CryptoJS.enc.Base64.parse(lastL).toString(CryptoJS.enc.Utf8);
+                },"BASE64(UTF8)解密");
             }},
             '->',
             {text: '清空', handler: function(){

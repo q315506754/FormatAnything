@@ -10,7 +10,7 @@
 * ~~md5 sha~~
 * ~~URLencode decode~~
 * 行首加数字
-* unicode
+* ~~unicode~~
 * html预览
 * js在线调试
 * 字符串比较

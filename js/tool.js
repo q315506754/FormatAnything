@@ -11,6 +11,9 @@ function getDataValue() {
 function setDataValue(txt) {
     return getDataEle().setValue(txt);
 }
+function getAndSetDataValue(cmd) {
+    setDataValue(cmd(getDataValue()));
+}
 function appendDataValue(txt) {
     return getDataEle().setValue(getDataValue()+'\n'+txt);
 }
@@ -35,7 +38,13 @@ function executeCmdForLastLine(cmd,promt) {
         appendDataValue(cmd(lastL));
     }
 }
-
+function toggleCaseExecute(cmd1,cmd2) {
+    if(toggleCaseMark)
+        cmd1();
+    else
+        cmd2();
+    toggleCaseMark = !toggleCaseMark;
+}
 // tab -> "    "
 window.onload=function(){
     var oTxt = document.getElementById("edit");
