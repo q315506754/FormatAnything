@@ -7,7 +7,7 @@ function generateDataPanel() {
         selectOnFocus: true,
         listeners: {
             render: function (tree) {
-                console.log(arguments);
+                // console.log(arguments);
                 tree.on('contextmenu',function(node,e){
                     console.log('aaa');
                 });

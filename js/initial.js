@@ -22,6 +22,8 @@ Ext.onReady(function () {
                 tabchange: function (tabpanel, tab) {
                     if (tab.id === 'viewerPanel') {
                         ctrlF.enable();
+                        //展开全部
+                        Ext.getCmp('tree').getRootNode().expand(true);
                     } else {
                         ctrlF.disable();
                     }

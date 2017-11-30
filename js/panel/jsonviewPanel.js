@@ -125,7 +125,7 @@ function generateJsonViewPanel(){
    return {
         id: 'viewerPanel',
         layout: 'border',
-        title: 'JSON视图',
+        title: 'JSON树视图',
         items: [tree, grid]
     };
 }
