@@ -133,7 +133,7 @@ ul.x-tab-strip li.x-tab-edge{float:left;margin:0!important;padding:0!important;b
 .x-tab-panel-bbar .x-toolbar{border:1px solid #99bbe8;border-top:0 none;overflow:hidden;padding:2px;}
 .x-tab-panel-tbar .x-toolbar{border:1px solid #99bbe8;border-top:0 none;overflow:hidden;padding:2px;}
 
- .x-form-field{margin:0;font:normal 12px tahoma,arial,helvetica,sans-serif;}
+ .x-form-field{margin:0;font:normal 18px tahoma,arial,helvetica,sans-serif;}
 .x-form-text,textarea.x-form-field{padding:1px 3px;background:#fff url(img/text-bg.gif) repeat-x 0 0;border:1px solid #B5B8C8;}
 textarea.x-form-field{padding:2px 3px;}
 .x-form-text{height:22px;line-height:18px;vertical-align:middle;}

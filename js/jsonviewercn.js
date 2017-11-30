@@ -289,7 +289,7 @@ Ext.onReady(function () {
 		id: 'edit',
 		xtype: 'textarea',
 		style: 'font-family:monospace',
-		emptyText: '将JSON数据粘贴到这里!',
+		emptyText: '请将数据粘贴到这里!',
 		selectOnFocus: true
 	};
 	var viewerPanel = {
@@ -322,6 +322,9 @@ Ext.onReady(function () {
 				jsonviewer.formatHtml();
 			}},
 			'-',
+            {text: '压缩', handler: function () {
+                jsonviewer.removeWhiteSpace();
+            }},
             {text: '大小写互转', handler: function () {
                 var txt = getDataValue();
                 if(!toggleCaseMark)
@@ -331,15 +334,22 @@ Ext.onReady(function () {
                 toggleCaseMark = !toggleCaseMark;
                 setDataValue(txt);
             }},
-			{text: '压缩', handler: function () {
-				jsonviewer.removeWhiteSpace();
-			}},
-			{text: '压缩&转义', handler: function () {
-				jsonviewer.removeWhiteSpace2();
-			}},
-			{text: '去除转义', handler: function () {
-				jsonviewer.removeZhuanyi();
-			}},
+            {text: 'Url En&Decode', handler: function () {
+                var txt = getDataValue();
+                if(txt.indexOf("%")<0)
+                    txt = encodeURIComponent(txt);
+                    // txt = encodeURI(txt);
+                else
+                    txt = decodeURIComponent(txt);
+                    // txt = decodeURI(txt);
+                setDataValue(txt);
+            }},
+			// {text: '压缩&转义', handler: function () {
+			// 	jsonviewer.removeWhiteSpace2();
+			// }},
+			// {text: '去除转义', handler: function () {
+			// 	jsonviewer.removeZhuanyi();
+			// }},
             '-',
 			{text: 'MD5', handler: function () {
                 executeCmdForLastLine(function (lastL) {

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/js/jsonviewercn.js" line="325" />
+    <bookmark url="file://$PROJECT_DIR$/js/jsonviewercn.js" line="328" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a60ba5-9fab-4c4b-b817-e2816447a8a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tool.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ext-all.css" afterPath="$PROJECT_DIR$/css/ext-all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jsonviewercn.js" afterPath="$PROJECT_DIR$/js/jsonviewercn.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,7 +25,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-844">
+            <state relative-caret-position="686">
               <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -41,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsonviewercn.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jsonviewercn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jsonviewercn.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="349" column="23" lean-forward="false" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
+              <caret line="345" column="15" lean-forward="true" selection-start-line="345" selection-start-column="15" selection-end-line="345" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -83,12 +80,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <first_editor relative-caret-position="330">
+                <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -99,8 +96,8 @@
       <file leaf-file-name="ext-all.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ext-all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3930">
-              <caret line="131" column="36" lean-forward="false" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
+            <state relative-caret-position="310">
+              <caret line="135" column="38" lean-forward="false" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -140,13 +137,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/ext-all.css" />
         <option value="$PROJECT_DIR$/js/md5.js" />
         <option value="$PROJECT_DIR$/js/sha.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/jsonviewercn.js" />
         <option value="$PROJECT_DIR$/js/tool.js" />
+        <option value="$PROJECT_DIR$/js/jsonviewercn.js" />
+        <option value="$PROJECT_DIR$/css/ext-all.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -188,6 +185,11 @@
             <path>
               <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
               <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
@@ -333,7 +335,7 @@
       <updated>1511954393370</updated>
       <workItem from="1511954395002" duration="6222000" />
       <workItem from="1512003881959" duration="5063000" />
-      <workItem from="1512009424760" duration="1874000" />
+      <workItem from="1512009424760" duration="3635000" />
     </task>
     <task id="LOCAL-00001" summary="html压缩">
       <created>1512006421193</created>
@@ -342,11 +344,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512006421193</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="加密工具">
+      <created>1512011327115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512011327115</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13159000" />
+    <option name="totallyTimeSpent" value="14920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -388,7 +397,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="html压缩" />
-    <option name="LAST_COMMIT_MESSAGE" value="html压缩" />
+    <MESSAGE value="加密工具" />
+    <option name="LAST_COMMIT_MESSAGE" value="加密工具" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -501,14 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ext-all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3930">
-          <caret line="131" column="36" lean-forward="false" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ext-base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -522,23 +524,6 @@
         <state relative-caret-position="30">
           <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -557,21 +542,7 @@
         <state relative-caret-position="150">
           <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844">
-          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -584,13 +555,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ext-all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="135" column="38" lean-forward="false" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/jsonviewercn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="349" column="23" lean-forward="false" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
+          <caret line="345" column="15" lean-forward="true" selection-start-line="345" selection-start-column="15" selection-end-line="345" selection-end-column="15" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

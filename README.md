@@ -8,5 +8,8 @@
 * ~~html格式化~~
 * ~~压缩（去空格）~~
 * ~~md5 sha~~
+* ~~URLencode decode~~
+* 行首加数字
+* unicode
 * html预览
 * js在线调试
