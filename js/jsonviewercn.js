@@ -294,34 +294,38 @@ Ext.onReady(function () {
 	var viewerPanel = {
 		id: 'viewerPanel',
 		layout: 'border',
-		title: '视图',
+		title: 'JSON视图',
 		items: [tree, grid]
 	};
 	var textPanel = {
 		id: 'textPanel',
 		layout: 'fit',
-		title: 'JSON数据',
+		title: '数据',
 		tbar: [
-			{text: '粘贴', handler: function () {
-				jsonviewer.pasteText();
-			}},
-			{text: '复制', handler: function () {
-				jsonviewer.copyText();
-			}},
-			'-',
-			{text: '格式化', handler: function () {
+			// {text: '粘贴', handler: function () {
+			// 	jsonviewer.pasteText();
+			// }},
+			// {text: '复制', handler: function () {
+			// 	jsonviewer.copyText();
+			// }},
+			// '-',
+			{text: 'JSON格式化', handler: function () {
 				jsonviewer.format();
 			}},
 			'-',
-			{text: '格式化(\\n)', handler: function () {
+			{text: 'JSON格式化(\\n\\t)', handler: function () {
 				jsonviewer.formatExt();
 			}},
 			'-',
-			{text: '删除空格', handler: function () {
+			{text: 'html格式化', handler: function () {
+				jsonviewer.formatHtml();
+			}},
+			'-',
+			{text: '压缩', handler: function () {
 				jsonviewer.removeWhiteSpace();
 			}},
 			'-',
-			{text: '删除空格并转义', handler: function () {
+			{text: '压缩&转义', handler: function () {
 				jsonviewer.removeWhiteSpace2();
 			}},
 			'-',
@@ -584,11 +588,20 @@ Ext.onReady(function () {
                                 c = "\n" + String.space((tab+1) * 2) ;
                                 i++;
                             }
+                            if(nextX === 't'){
+                                c = String.space(2) ;
+                                i++;
+                            }
                         }
 					}
 					t.push(c);
 				}
 				edit.setValue(t.join(''));
+			},
+			formatHtml: function () {
+				var text = edit.getValue().split("\n").join(" ");
+				text = style_html(text, 4,  ' ', 80);
+				edit.setValue(text);
 			},
 			removeWhiteSpace:function(){
 				edit.setValue(jsonviewer.getRemoveWhiteSpace());
