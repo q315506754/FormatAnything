@@ -53,15 +53,8 @@ function generateDataPanel() {
         // cmargins    : '3 3 3 3'
         listeners: {
             'beforeexpand':function () {
-                console.log('aaa');
-
                 refreshPreview();
             }
-            // 'beforeexpand':{
-            //     fn:function () {
-            //         console.log('aaa');
-            //     }
-            // }
         }
     });
 
