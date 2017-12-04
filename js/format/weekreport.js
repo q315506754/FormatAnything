@@ -11,6 +11,7 @@ function fillSpacePrefix(str, totalLength) {
     return str;
 }
 
+var WEEK_PREFIX_STRING=". ";
 function formatWeeklyReport(str) {
     if (!isEmpty(str)) {
         var arr = str.split("\n");
@@ -38,15 +39,17 @@ function formatWeeklyReport(str) {
             }else {
                 realArr.push([]);
 
-                eachGroupArr = new Array();
-                realArr.push(eachGroupArr);
+                if(i<arr.length-1){
+                    eachGroupArr = new Array();
+                    realArr.push(eachGroupArr);
+                }
             }
         }
 
         // console.log(realArr);
 
         var lastStr = "";
-        var prefix = ". ";
+        var prefix = WEEK_PREFIX_STRING;
         for(var i=0;i<realArr.length;i++){
             var groupArr = realArr[i];
 
@@ -59,9 +62,15 @@ function formatWeeklyReport(str) {
 
                     //:结尾的不编号
                     if(/[:：]\s*$/.test(groupLine)){
-                        lastStr=lastStr+groupLine+'\n';
+                        lastStr=lastStr+groupLine;
                     } else {
-                        lastStr=lastStr+fillSpacePrefix(""+(k++),(groupArr.length+"").length)+prefix+groupLine+'\n';
+                        lastStr=lastStr+fillSpacePrefix(""+(k++),(groupArr.length+"").length)+prefix+groupLine;
+                    }
+
+                    //最后一行不加换行
+                    if (i==realArr.length-1 && j==groupArr.length-1) {
+                    }else {
+                        lastStr=lastStr+'\n';
                     }
                 }
             }
@@ -71,4 +80,13 @@ function formatWeeklyReport(str) {
     }
 
     return "";
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    var isEmpty = require("../tool").isEmpty;
+
+    module.exports = {
+        formatWeeklyReport,
+        WEEK_PREFIX_STRING
+    };
 }
