@@ -231,18 +231,13 @@ function generateDataPanel() {
                             {text:'周报格式化',
                                 iconCls:'newdep_images',  //样式
                                 handler:function(){
-                                    // setDataValue("");
-                                    // getDataEle().focus();
-                                    // getAndSetDataValue(function (str) {
-                                    //     if (!isEmpty(str)){
-                                    //         return str.split("\n")[0];
-                                    //     }
-                                    //     return "";
-                                    // });
-                                    // var str = getDataValue();
-                                    // var strArr=new Array();
                                     formatWeeklyReportForDataArea();
-                                    // setDataValue(lastStr);
+                                }
+                            },
+                            {text:'周报去序号',
+                                iconCls:'newdep_images',  //样式
+                                handler:function(){
+                                    deleteNumberWeeklyReportForDataArea();
                                 }
                             }
                         ]

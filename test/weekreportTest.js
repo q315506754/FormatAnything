@@ -5,7 +5,7 @@ var expect = require("chai").expect;//npm install --save-dev chai
 // console.log(getGlobal);
 // console.log(formatWeeklyReport("1aaa22"));
 
-describe("周报测试",function () {
+describe("周报格式化测试",function () {
     before(function() {
     });
     beforeEach(function() {
@@ -42,9 +42,7 @@ ccc`)).to.be.equal(
 1. 教师专栏H5预购需求   王继骏
 2. 教师专栏APP预购需求  王继骏
 3. 教学主页新增学校主页入口   王继骏
-4. 开机启动页新增分享功能     王继骏
-
-`
+4. 开机启动页新增分享功能     王继骏`
 );
 
         expect(formatWeeklyReport(
