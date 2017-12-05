@@ -8,6 +8,7 @@ function getDataEle() {
 function getDataValue() {
     return getDataEle().getValue();
 }
+//加钩子 可撤销 可重做
 function setDataValue(txt) {
     return getDataEle().setValue(txt);
 }

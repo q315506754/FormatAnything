@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99a60ba5-9fab-4c4b-b817-e2816447a8a0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/initial.js" afterPath="$PROJECT_DIR$/js/initial.js" />
-      <change beforePath="$PROJECT_DIR$/js/panel/dataPanel.js" afterPath="$PROJECT_DIR$/js/panel/dataPanel.js" />
+      <change beforePath="$PROJECT_DIR$/js/jsonviewerGenerator.js" afterPath="$PROJECT_DIR$/js/jsonviewerGenerator.js" />
+      <change beforePath="$PROJECT_DIR$/js/tool.js" afterPath="$PROJECT_DIR$/js/tool.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,8 +44,8 @@
       <file leaf-file-name="jsonviewerGenerator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jsonviewerGenerator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3852">
-              <caret line="107" column="36" lean-forward="false" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+            <state relative-caret-position="470">
+              <caret line="245" column="61" lean-forward="false" selection-start-line="245" selection-start-column="61" selection-end-line="245" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -66,17 +66,17 @@
       <file leaf-file-name="dataPanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="226" column="49" lean-forward="false" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+            <state relative-caret-position="324">
+              <caret line="411" column="23" lean-forward="true" selection-start-line="411" selection-start-column="23" selection-end-line="411" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="initial.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/initial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
+            <state relative-caret-position="-972">
               <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -86,18 +86,18 @@
       <file leaf-file-name="weekreport.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/format/weekreport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3816">
-              <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+            <state relative-caret-position="-2700">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tool.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tool.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/tool.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="324">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -178,13 +178,11 @@
         <option value="$PROJECT_DIR$/js/sha.js" />
         <option value="$PROJECT_DIR$/css/ext-all.css" />
         <option value="$PROJECT_DIR$/js/jsonviewercn.js" />
-        <option value="$PROJECT_DIR$/js/jsonviewerGenerator.js" />
         <option value="$PROJECT_DIR$/js/algo/base64.js" />
         <option value="$PROJECT_DIR$/js/algo/unicode.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/panel/jsonviewPanel.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/tool.js" />
         <option value="$PROJECT_DIR$/test/mocha.opts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/weekreportTest.js" />
@@ -192,6 +190,8 @@
         <option value="$PROJECT_DIR$/test/weekreportTestNumber.js" />
         <option value="$PROJECT_DIR$/js/panel/dataPanel.js" />
         <option value="$PROJECT_DIR$/js/initial.js" />
+        <option value="$PROJECT_DIR$/js/jsonviewerGenerator.js" />
+        <option value="$PROJECT_DIR$/js/tool.js" />
       </list>
     </option>
   </component>
@@ -459,11 +459,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512383462805</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="扩展快捷键">
+      <created>1512484610581</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512484610581</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70599000" />
+    <option name="totallyTimeSpent" value="71127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -522,7 +529,8 @@
     <MESSAGE value="预览功能" />
     <MESSAGE value="excel功能" />
     <MESSAGE value="test用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="test用例" />
+    <MESSAGE value="扩展快捷键" />
+    <option name="LAST_COMMIT_MESSAGE" value="扩展快捷键" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,14 +783,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ext/ext-all-debug.js" />
-    <entry file="file://$PROJECT_DIR$/js/jsonviewerGenerator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3852">
-          <caret line="107" column="36" lean-forward="false" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/npm-debug.log" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -824,26 +824,10 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/babel-cli/node_modules/.6.24.0@babel-core/lib/transformation/file/index.js" />
-    <entry file="file://$PROJECT_DIR$/js/tool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/format/weekreport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3816">
-          <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -864,6 +848,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/format/weekreport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2700">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/initial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/panel/jsonviewPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -872,18 +872,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
+    <entry file="file://$PROJECT_DIR$/js/jsonviewerGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="226" column="49" lean-forward="false" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+        <state relative-caret-position="470">
+          <caret line="245" column="61" lean-forward="false" selection-start-line="245" selection-start-column="61" selection-end-line="245" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/initial.js">
+    <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="411" column="23" lean-forward="true" selection-start-line="411" selection-start-column="23" selection-end-line="411" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>

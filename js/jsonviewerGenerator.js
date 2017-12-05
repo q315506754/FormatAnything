@@ -187,7 +187,8 @@ function jsonviewerGenerator() {
                     }
                     t.push(c);
                 }
-                edit.setValue(t.join(''));
+                // edit.setValue(t.join(''));
+                setDataValue(t.join(''));
             },
             formatExt: function () {
                 var text = edit.getValue().split("\n").join(" ");
@@ -231,15 +232,18 @@ function jsonviewerGenerator() {
                     }
                     t.push(c);
                 }
-                edit.setValue(t.join(''));
+                // edit.setValue(t.join(''));
+                setDataValue(t.join(''))
             },
             formatHtml: function () {
                 var text = edit.getValue().split("\n").join(" ");
                 text = style_html(text, 4,  ' ', 80);
-                edit.setValue(text);
+                // edit.setValue(text);
+                setDataValue(text);
             },
             removeWhiteSpace:function(){
-                edit.setValue(jsonviewer.getRemoveWhiteSpace());
+                // edit.setValue(jsonviewer.getRemoveWhiteSpace());
+                setDataValue(jsonviewer.getRemoveWhiteSpace());
             }
             ,
             getRemoveWhiteSpace: function () {
