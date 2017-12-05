@@ -3,8 +3,8 @@ Ext.onReady(function () {
     Ext.BLANK_IMAGE_URL = 'css/img/s.gif';
     Ext.QuickTips.init();
 
-    //key shot
-    var ctrlF = generateKeyshot(jsonviewer);
+    //key shots
+    var keyshots = [generateJSONViewKeyshot(jsonviewer),generateDataViewKeyshot()];
 
    //主视图
     new Ext.Viewport({
@@ -15,17 +15,24 @@ Ext.onReady(function () {
             activeTab: 'textPanel',
             listeners: {
                 beforetabchange: function (tabpanel, tab) {
-                    if (tab.id === 'viewerPanel') {
-                        return jsonviewer.check();
+                    for(var i =0;i<keyshots.length;i++){
+                        var one = keyshots[i];
+                        if (tab.id === one.pannel && one.beforetabchange) {
+                            return one.beforetabchange(tabpanel, tab)
+                        }
                     }
                 },
                 tabchange: function (tabpanel, tab) {
-                    if (tab.id === 'viewerPanel') {
-                        ctrlF.enable();
-                        //展开全部
-                        Ext.getCmp('tree').getRootNode().expand(true);
-                    } else {
-                        ctrlF.disable();
+                    for(var i =0;i<keyshots.length;i++){
+                        var one = keyshots[i];
+                        if (tab.id === one.pannel ) {
+                            if(one.tabchange){
+                                one.tabchange(tabpanel, tab);
+                            }
+                            one.hnd.enable();
+                        }else{
+                            one.hnd.disable();
+                        }
                     }
                 }
             }
@@ -36,7 +43,7 @@ Ext.onReady(function () {
      jsonviewer = jsonviewerGenerator();
 });
 
-function generateKeyshot() {
+function generateJSONViewKeyshot() {
     var ctrlF= new Ext.KeyMap(document, [{
         key: Ext.EventObject.F,
         ctrl: true,
@@ -53,5 +60,44 @@ function generateKeyshot() {
         }
     }]);
     ctrlF.disable();
-    return ctrlF;
+
+    return {
+        pannel:'viewerPanel',
+        hnd:ctrlF,
+        beforetabchange:function (tabpanel, tab) {
+            return jsonviewer.check();
+        },
+        tabchange: function (tabpanel, tab) {
+            //展开全部
+            Ext.getCmp('tree').getRootNode().expand(true);
+        }
+    };
+}
+function generateDataViewKeyshot() {
+    var ctrlF= new Ext.KeyMap(document, [{
+        key: Ext.EventObject.Z,
+        ctrl: true,
+        stopEvent: true,
+        fn: function () {
+           console.log('ctrl+z');
+        }
+    }, {
+        key: Ext.EventObject.Y,
+        ctrl: true,
+        stopEvent: true,
+        fn: function () {
+            console.log('ctrl+y');
+        }
+    }]);
+
+    return {
+        pannel:'textPanel',
+        hnd:ctrlF,
+        beforetabchange:function (tabpanel, tab) {
+
+        },
+        tabchange: function (tabpanel, tab) {
+
+        }
+    };
 }
