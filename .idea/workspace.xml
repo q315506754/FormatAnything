@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a60ba5-9fab-4c4b-b817-e2816447a8a0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/historyBox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/historyBoxTest.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/submenu/codesnippet.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/submenu/template.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/initial.js" afterPath="$PROJECT_DIR$/js/initial.js" />
       <change beforePath="$PROJECT_DIR$/js/panel/dataPanel.js" afterPath="$PROJECT_DIR$/js/panel/dataPanel.js" />
-      <change beforePath="$PROJECT_DIR$/js/tool.js" afterPath="$PROJECT_DIR$/js/tool.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+            <state relative-caret-position="220">
+              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -55,23 +53,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataPanel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataPanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="114" column="30" lean-forward="true" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+            <state relative-caret-position="480">
+              <caret line="125" column="48" lean-forward="true" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
               <folding>
-                <marker date="1512529367761" expanded="true" signature="2708:2726" ph="{...}" />
+                <marker date="1512530554856" expanded="true" signature="2708:2726" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsonviewPanel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/panel/jsonviewPanel.js">
+      <file leaf-file-name="codesnippet.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/submenu/codesnippet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1260">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+            <state relative-caret-position="250">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mocha.opts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/mocha.opts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/submenu/template.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -80,8 +108,8 @@
       <file leaf-file-name="initial.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/initial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="85" column="16" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -164,11 +192,13 @@
         <option value="$PROJECT_DIR$/test/weekreportTestNumber.js" />
         <option value="$PROJECT_DIR$/js/jsonviewerGenerator.js" />
         <option value="$PROJECT_DIR$/test/historyBoxTest.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/tool.js" />
         <option value="$PROJECT_DIR$/js/initial.js" />
         <option value="$PROJECT_DIR$/js/historyBox.js" />
+        <option value="$PROJECT_DIR$/js/submenu/template.js" />
         <option value="$PROJECT_DIR$/js/panel/dataPanel.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/submenu/codesnippet.js" />
       </list>
     </option>
   </component>
@@ -219,13 +249,7 @@
               <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
               <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="format" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FormatAnything" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
+              <item name="submenu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FormatAnything" type="b2602c69:ProjectViewProjectNode" />
@@ -443,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512484610581</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="扩展快捷键 + 重做机制">
+      <created>1512529403874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1512529403874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79001000" />
+    <option name="totallyTimeSpent" value="81307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -507,7 +538,8 @@
     <MESSAGE value="excel功能" />
     <MESSAGE value="test用例" />
     <MESSAGE value="扩展快捷键" />
-    <option name="LAST_COMMIT_MESSAGE" value="扩展快捷键" />
+    <MESSAGE value="扩展快捷键 + 重做机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="扩展快捷键 + 重做机制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,23 +559,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/format/htmlformat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <marker date="1512529367761" expanded="true" signature="2708:2726" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/tool.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -766,22 +781,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/mocha.opts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/babel-cli/node_modules/.6.24.0@babel-core/lib/transformation/file/index.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/weekreportTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4490">
@@ -822,22 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/initial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="85" column="16" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/historyBoxTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
@@ -854,6 +838,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/initial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/historyBox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -862,13 +854,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/submenu/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/panel/dataPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="114" column="30" lean-forward="true" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+        <state relative-caret-position="480">
+          <caret line="125" column="48" lean-forward="true" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
           <folding>
-            <marker date="1512529367761" expanded="true" signature="2708:2726" ph="{...}" />
+            <marker date="1512530554856" expanded="true" signature="2708:2726" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mocha.opts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/submenu/codesnippet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
