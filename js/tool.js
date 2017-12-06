@@ -9,15 +9,46 @@ function getDataValue() {
     return getDataEle().getValue();
 }
 //加钩子 可撤销 可重做
-function setDataValue(txt) {
-    return getDataEle().setValue(txt);
+function setDataValue(txt,notRecord) {
+    getDataEle().setValue(txt);
+
+    if(!notRecord){
+        HistoryBox.record(getDataValue());
+    }
 }
+function appendDataValue(txt) {
+    return setDataValue(getDataValue()+'\n'+txt);
+}
+
+function recordCurrentData(){
+    getAndSetDataValue(function (str) {
+        return str;
+    });
+}
+
+function _redo() {
+    setDataValue(HistoryBox.redo() || "",true);
+}
+function _undo() {
+    setDataValue(HistoryBox.undo() || "",true);
+}
+function _clear() {
+    setDataValue("");
+    getDataEle().focus();
+}
+function _remainFirstLine() {
+    getAndSetDataValue(function (str) {
+        if (!isEmpty(str)){
+            return str.split("\n")[0];
+        }
+        return "";
+    });
+}
+
 function getAndSetDataValue(cmd) {
     setDataValue(cmd(getDataValue()));
 }
-function appendDataValue(txt) {
-    return getDataEle().setValue(getDataValue()+'\n'+txt);
-}
+
 function getDataLastLineValue() {
     var total = getDataEle().getValue();
     var arr  = total.split("\n");

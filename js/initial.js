@@ -78,17 +78,25 @@ function generateDataViewKeyshot() {
         key: Ext.EventObject.Z,
         ctrl: true,
         stopEvent: true,
-        fn: function () {
-           console.log('ctrl+z');
-        }
+        fn: _undo
     }, {
         key: Ext.EventObject.Y,
         ctrl: true,
         stopEvent: true,
-        fn: function () {
-            console.log('ctrl+y');
-        }
-    }]);
+        fn: _redo
+    }, {
+        key: Ext.EventObject.E,
+        ctrl: true,
+        stopEvent: true,
+        fn: _clear
+    }, {
+        key: Ext.EventObject.R,
+        ctrl: true,
+        stopEvent: true,
+        fn: _remainFirstLine
+    }
+
+    ]);
 
     return {
         pannel:'textPanel',

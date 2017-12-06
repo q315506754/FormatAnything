@@ -67,6 +67,7 @@ function generateDataPanel() {
             previewPanel.body.update(getDataValue());
             _preview_helper.htmlLastTime = new Date().getTime();
         }
+
     }
 
     var edit = {
@@ -74,7 +75,8 @@ function generateDataPanel() {
         xtype: 'textarea',
         region      : 'center',
         style: 'font-family:monospace',
-        emptyText: '请将数据粘贴到这里!',
+        // emptyText: '请将数据粘贴到这里!',
+        emptyText: '',
         selectOnFocus: true,
         enableKeyEvents: true,//必须 不然keypress keyup不会调用
         // initComponent:function () {
@@ -96,24 +98,20 @@ function generateDataPanel() {
                     var menu=new Ext.menu.Menu({
                         minWidth:120,
                         items:[
-                            {text:'清空',
+                            {text:'清空    (ctrl+E)',
                                 iconCls:'newdep_images',  //样式
                                 id:"copyItem",
-                                handler:function(){
-                                    setDataValue("");
-                                    getDataEle().focus();
-                                }
+                                handler:_clear
                             },
-                            {text:'只保留第一行',
+                            {text:'只保留第一行 (ctrl+R)',
                                 iconCls:'newdep_images',  //样式
-                                handler:function(){
-                                    getAndSetDataValue(function (str) {
-                                        if (!isEmpty(str)){
-                                            return str.split("\n")[0];
-                                        }
-                                        return "";
-                                    });
-                                }
+                                handler:_remainFirstLine
+                            },
+                            {text:'撤销 (ctrl+Z)',
+                                handler:_undo
+                            },
+                            {text:'重做 (ctrl+Y)',
+                                handler:_redo
                             },
                             '-',
                             {
@@ -256,8 +254,14 @@ function generateDataPanel() {
                     // menu.showAt(e.getPoint());
                 };
             },
+            // 'blur': {
+            //     fn: function(t){
+            //         recordCurrentData();
+            //     }
+            // },
             'keyup': {
                 fn: function(t){
+                    // console.log(arguments);
                     var v = t.getValue(),
                         wc = 0, cc = v.length ? v.length : 0;
 
@@ -275,6 +279,12 @@ function generateDataPanel() {
                     //     previewPanel.body.update(markdown.toHTML( getDataValue() ));
                     // }
                     refreshPreview();
+
+                    //记录
+                    // let dataValue = getDataValue();
+                    // if(dataValue.endsWith("\n") || dataValue.endsWith(" ")){
+                    recordCurrentData();
+                    // }
                 },
                 buffer: 1 // buffer to allow the value to update first
             }
