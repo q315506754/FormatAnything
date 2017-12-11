@@ -314,9 +314,9 @@ function generateDataPanel() {
             {text: '清空', handler: function(){
                 setDataValue("");
             }},
-            {text: 'github', handler: function(){
-                window.location.href="https://github.com/q315506754/FormatAnything";
-            }},
+            // {text: 'github', handler: function(){
+            //     window.location.href="https://github.com/q315506754/FormatAnything";
+            // }},
             // {text: '关于', handler: aboutWindow}
         ],
         items: [edit,lineNumber,previewPanel],
