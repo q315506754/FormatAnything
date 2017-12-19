@@ -1,7 +1,5 @@
 function HistoryBoxFactory() {
-    this.records = [];
-    this.position = -1;
-    this.lastTs = -1;
+    this.reset()
 }
 
 HistoryBoxFactory.RECORD_INTERVAL = 50;
@@ -23,20 +21,22 @@ HistoryBoxFactory.prototype.record = function (cmd) {
         return;
     }
 
+    // console.log(HistoryBoxFactory.RECORD_INTERVAL);
+
     //undo
     if(this.position != this.records.length-1){
 
         //移除后面的记录
         this.records.splice(this.position+1);
     } else {
-        if(cur - this.lastTs > HistoryBoxFactory.RECORD_INTERVAL) {
-            this.realPush(cmd);
+    }
 
-            this.lastTs = cur;
-        } else {
-            this.records[this.position]=cmd;
-        }
+    if(cur - this.lastTs > HistoryBoxFactory.RECORD_INTERVAL) {
+        this.realPush(cmd);
 
+        this.lastTs = cur;
+    } else {
+        this.records[this.position]=cmd;
     }
 }
 
@@ -52,6 +52,11 @@ HistoryBoxFactory.prototype.undo = function () {
         this.position -- ;
     }
     return this.records[this.position];
+}
+HistoryBoxFactory.prototype.reset = function () {
+    this.records = [];
+    this.position = -1;
+    this.lastTs = -1;
 }
 
 HistoryBoxFactory.prototype.realPush = function (cmd) {

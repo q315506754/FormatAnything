@@ -212,6 +212,12 @@ function generateDataPanel() {
             {text: '压缩', handler: function () {
                 jsonviewer.removeWhiteSpace();
             }},
+            {text: '去空行', handler: function () {
+                getAndSetDataValue(function (txt) {
+                    return txt.replace(/\s*\n{2,}/g,"\n");
+                    // return txt.replace(/^\s*$/mg,"").replace(/\n{2,}/g,"\n");
+                });
+            }},
             '-',
             '-',
             {text: '大小写互转', handler: function () {
