@@ -48,7 +48,7 @@ describe("HistoryBox",function () {
         expect(HistoryBox.position).to.be.equal(2);
         expect(HistoryBox.records.length).to.be.equal(3);
 
-        console.log(HistoryBox.records);
+        // console.log(HistoryBox.records);
         expect(HistoryBox.undo()).to.be.equal("b");
         HistoryBox.record("d");
         expect(HistoryBox.redo()).to.be.equal(`d`);
