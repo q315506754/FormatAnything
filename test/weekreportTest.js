@@ -1,5 +1,6 @@
 import {formatWeeklyReport} from '../js/format/weekreport'
 var expect = require("chai").expect;//npm install --save-dev chai
+var _config = require("../js/config")._config;//npm install --save-dev chai
 
 // console.log(window);
 // console.log(getGlobal);
@@ -17,6 +18,26 @@ describe("周报格式化测试",function () {
 
     it("空串",function () {
         expect(formatWeeklyReport("")).to.be.equal(``);
+    });
+
+    _config.codeMode="2";//重新编号
+    it("多行",function () {
+        expect(formatWeeklyReport(
+            `aaa
+bbb
+ccc
+
+ddd
+eee
+fff`)).to.be.equal(
+            `1. aaa
+2. bbb
+3. ccc
+
+1. ddd
+2. eee
+3. fff`
+        );
     });
 
     it("单组",function () {
@@ -75,7 +96,7 @@ ccc`)).to.be.equal(
     });
 
 
-
+    _config.codeMode="2";//重新编号
     it("多组",function () {
         expect(formatWeeklyReport(
 `aaa
@@ -142,6 +163,8 @@ fff`)).to.be.equal(
 11. 学时改三位数需求输出  11.29  朴雪花`
 );
 
+
+        _config.codeMode="2";
         expect(formatWeeklyReport(
 `"未完成：
 1.新建的课程，关联课程ID（课程历史版本管理）完成设计和终审  11.27  任明泉

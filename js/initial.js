@@ -41,6 +41,8 @@ Ext.onReady(function () {
 
     //helper  必须放后面
      jsonviewer = jsonviewerGenerator();
+
+     HistoryBox.record(_config.lastContent);
 });
 
 function generateJSONViewKeyshot() {
@@ -94,6 +96,11 @@ function generateDataViewKeyshot() {
         ctrl: true,
         stopEvent: true,
         fn: _remainFirstLine
+    }, {
+        key: Ext.EventObject.G,
+        ctrl: true,
+        stopEvent: true,
+        fn: openConfigWindow
     }
 
     ]);

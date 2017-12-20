@@ -143,21 +143,49 @@ function formatWeeklyReport(str) {
     if (realArr) {
         var lastStr = "";
         var prefix = WEEK_PREFIX_STRING;
+
+        var invalidLine = function (strx) {
+            return /[:：]\s*$/.test(strx);
+        }
+
+        var totalCount = 0;
+        for(var i=0;i<realArr.length;i++) {
+            var groupArr = realArr[i];
+            for(var j=0;j<groupArr.length;j++) {
+                var groupLine = groupArr[j];
+                if(!invalidLine(groupLine)){
+                    totalCount++;
+                }
+            }
+        }
+        // console.log(totalCount);
+
+        var globalCount = 1;
         for(var i=0;i<realArr.length;i++){
             var groupArr = realArr[i];
 
             if(groupArr.length == 0){
                 lastStr+='\n';
             } else {
-                var k=1;
+                var groupCount=1;
                 for(var j=0;j<groupArr.length;j++){
                     var groupLine = groupArr[j];
 
                     //:结尾的不编号
-                    if(/[:：]\s*$/.test(groupLine)){
+                    if(invalidLine(groupLine)){
                         lastStr=lastStr+groupLine;
                     } else {
-                        lastStr=lastStr+fillSpacePrefix(""+(k++),(groupArr.length+"").length)+prefix+groupLine;
+                        var realCount;
+                        var realTotal;
+                        if(_config.codeMode == '1'){
+                            realCount=  globalCount++;
+                            realTotal = (totalCount+"").length;
+                        }else if(_config.codeMode == '2'){
+                            realCount=  groupCount++;
+                            realTotal = (groupArr.length+"").length;
+                        }
+
+                        lastStr=lastStr+fillSpacePrefix(""+realCount,realTotal)+prefix+groupLine;
                     }
 
                     //最后一行不加换行
@@ -177,6 +205,7 @@ function formatWeeklyReport(str) {
 
 if (typeof module !== 'undefined' && module.exports) {
     var isEmpty = require("../tool").isEmpty;
+    var _config = require("../config")._config;
 
     module.exports = {
         formatWeeklyReport,

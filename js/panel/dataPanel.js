@@ -77,6 +77,7 @@ function generateDataPanel() {
         style: 'font-family:monospace',
         // emptyText: '请将数据粘贴到这里!',
         emptyText: '',
+        value: _config.lastContent,
         selectOnFocus: true,
         enableKeyEvents: true,//必须 不然keypress keyup不会调用
         // initComponent:function () {
@@ -113,6 +114,13 @@ function generateDataPanel() {
                             {text:'重做 (ctrl+Y)',
                                 handler:_redo
                             },
+                            '-',
+                            {
+                                text: '配置 (ctrl+G)',
+                                handler:function(){
+                                    openConfigWindow();
+                                }
+                            } ,
                             '-',
                             {
                                 text: '插入模板',
@@ -214,7 +222,7 @@ function generateDataPanel() {
             }},
             {text: '去空行', handler: function () {
                 getAndSetDataValue(function (txt) {
-                    return txt.replace(/\s*\n{2,}/g,"\n");
+                    return txt.replace(/\s*\n{2,}/g,"\n").replace(/^\s*\n/,"").replace(/\s*\n(\s*\n*){1,}$/,"");
                     // return txt.replace(/^\s*$/mg,"").replace(/\n{2,}/g,"\n");
                 });
             }},
