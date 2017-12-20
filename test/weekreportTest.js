@@ -21,11 +21,13 @@ describe("周报格式化测试",function () {
     });
 
     _config.codeMode="2";//重新编号
-    it("多行",function () {
+    it("多空行",function () {
         expect(formatWeeklyReport(
             `aaa
 bbb
 ccc
+
+
 
 ddd
 eee
@@ -33,6 +35,8 @@ fff`)).to.be.equal(
             `1. aaa
 2. bbb
 3. ccc
+
+
 
 1. ddd
 2. eee

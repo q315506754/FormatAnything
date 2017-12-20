@@ -102,6 +102,7 @@ function arrayTrimOfWeeklyReport(str) {
         pureArr.push(eachGroupArr);
 
         //
+        var prevEmpty = false;
         for(var i=0;i<arr.length;i++){
             var eachLine = arr[i];
             // console.log(eachLine);
@@ -118,14 +119,22 @@ function arrayTrimOfWeeklyReport(str) {
 
             //去除后再判断
             if (!isEmpty(eachLine)) {
-                eachGroupArr.push(eachLine);
-            }else {
-                pureArr.push([]);
-
-                if(i<arr.length-1){
+                if(prevEmpty){
                     eachGroupArr = new Array();
                     pureArr.push(eachGroupArr);
                 }
+
+                eachGroupArr.push(eachLine);
+
+                prevEmpty=false;
+            }else {
+                pureArr.push([]);
+
+                prevEmpty = true;
+                // if(i<arr.length-1){
+                //     eachGroupArr = new Array();
+                //     pureArr.push(eachGroupArr);
+                // }
             }
         }
 
