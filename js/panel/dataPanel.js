@@ -324,6 +324,14 @@ function generateDataPanel() {
                 // console.log(previewPanel.collapsed);
                 previewPanel.collapsed?previewPanel.expand():previewPanel.collapse();
             }},
+            '-',
+            '-',
+            {text: 'es6字符串',  handler: function () {
+                var txt = getDataValue();
+
+                txt = es6StringToJoinStr(txt,'\'');
+               setDataValue(txt);
+            }},
             '->',
             {text: '清空', handler: function(){
                 setDataValue("");
